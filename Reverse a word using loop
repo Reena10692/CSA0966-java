@@ -1,0 +1,17 @@
+import java.util.*;
+public class Reverse{
+    public static void main(String[] args){
+        Scanner s1=new Scanner(System.in);
+        System.out.println("enter the string");
+        String j1=s1.nextLine();
+        int l;
+        char ch;
+        String j3="";
+        l=j1.length();
+        for(int i=l;i>0;i--){
+            ch=j1.charAt(i-1);
+            j3=j3+ch;
+        }
+        System.out.println(j3);
+    }
+}
