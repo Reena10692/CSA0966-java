@@ -1,0 +1,22 @@
+package reverse;
+import java.io.*;
+import java.util.*;
+public class stringindex{
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		System.out.println("enter the string:");
+		String a=s.nextLine();
+		System.out.println("enter the search element:");
+		char c=s.next().charAt(0);
+		int j=a.length();
+		for(int i=0;i<j;i++)
+		{
+			if(a.charAt(i)==c)
+			{
+				System.out.println("element found in index:"+i);
+				
+			}
+		}
+		
+	}
+}
