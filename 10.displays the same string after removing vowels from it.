@@ -1,0 +1,25 @@
+package reverse;
+import java.io.*;
+import java.util.*;
+
+public class removingvowels {
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		System.out.println("enter the string:");
+		String a=s.nextLine();
+		System.out.println("consonants \n");
+		int j,l=a.length();
+		for( j=0;j<l;j++)
+		{
+			if(a.charAt(j)=='a'||a.charAt(j)=='e'||a.charAt(j)=='i'||a.charAt(j)=='o'||a.charAt(j)=='u')
+			{
+				continue;
+			}
+			else
+			{
+				System.out.println(a.charAt(j));
+			}
+		}
+	}
+
+}
